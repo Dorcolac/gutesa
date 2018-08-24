@@ -1,0 +1,16 @@
+@media screen and (min-width: 750px) {
+	.man-info .main,
+	.man-info .side
+	{
+		display: inline-block;
+	}
+
+	.man-info .main {
+		width: 60%;
+	}
+
+	.man-info .side {
+		width: 30%;
+	}
+
+}

@@ -7,49 +7,101 @@
 	<meta name="author" content="Nikola Starčević">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
 	<title>Guteša doo</title>
 </head>
 <body>
 	<header>
 		<div class="container">
-			<div class="logo">Guteša doo</div>
+			<section class="pre-nav">
+				<div class="logo">Guteša doo</div>
+				<div class="burger">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</section>
 			<nav>
 				<ul>
-					<li><a href="">Početna</a></li>
-					<li><a href="">O nama</a></li>
-					<li><a href="">Kako do nas</a></li>
-					<li><a href="">Kontakt</a></li>
+					<li><a href=""><i class="fas fa-home"></i> Početna</a></li>
+					<li><a href=""><i class="fas fa-info-circle"></i> O nama</a></li>
+					<li><a href=""><i class="fas fa-map-marked-alt"></i> Kako do nas</a></li>
+					<li><a href=""><i class="fas fa-phone-square"></i> Kontakt</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<main>
 		<div class="container">
-			<section id="proizvodjaci">
+			<section class="o-nama">
+
+				Dobro došli na web sajt firme Guteša doo.
+
+				Mi smo veleprodaja autodelova za automobile i kamione, sa desetogodišnjim iskustvom. U svom asortimanu imamo veoma veliki broj artikala od više eminentih proizvođača autodelova, a naš rad karakterišu preciznost i veoma brza isporuka. Rastemo i razvijamo se poštujući pre svega zahteve tržišta i želje kupca.
+
+				Vaše je samo da nam javite šta vam je potrebno, a mi ćemo učiniti sve da  to pronađemo u što kraćem roku, i isporučimo  vam. Na našem sajtu možete pogledati s kojim proizvođačima autodelova sarađujemo. U našem lageru se nalazi veliki broj autodelova i komponenti, a da lakše pronađete ono što je potrebno, tu su katalozi proizvoda.
+
+				Ako imate bilo kakvo pitanje ili sugestiju, javite nam se, na kontakt strani možete da vidite sve naše podatke. 
+
+				USKORO NA NOVOJ LOKACIJI: CVETANOVA ĆUPRIJA 24E, BEOGRAD
+			</section>
+			<section id="">
 				<h2>Proizvođači</h2>
 				<p>U ponudi imamo veliki izbor kvalitetnih proizvođača.</p>
-				<p>Kliknite na proizvođača kako bi pogledali katalog:</p>
-				<div class="manufacturers">
-					<div class="shell"></div>
-					<div class="automega"></div>
-					<div class="blueprint"></div>
-					<div class="febi"></div>
-					<div class="glaser"></div>
-					<div class="npr"></div>
+				<p>Kliknite na proizvođača za više detalja:</p>
+				<div id="proizvodjaci" class="manufacturers">
+					<div class="manufacturer">
+						<img src="img/man-thumb/shell.png" alt="Shell logo" title="Shell" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, atque.">
+					</div>
+					<div class="manufacturer">
+						<img src="img/man-thumb/automega.jpg" alt="AutoMega logo" title="AutoMega" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, impedit!">
+					</div>
+					<div class="manufacturer">
+						<img src="img/man-thumb/blueprint.jpg" alt="Blue Print logo" title="Blue Print" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa.">
+					</div>
+					<div class="manufacturer">
+						<img src="img/man-thumb/febi.png" alt="Febi Bilstein logo" title="Febi Bilstein" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, fuga.">
+					</div>
+					<div class="manufacturer">
+						<img src="img/man-thumb/glaser.png" alt="Glaser logo" title="Glaser" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, unde.">
+					</div>
+					<div class="manufacturer">
+						<img src="img/man-thumb/npr.jpg" alt="NPR Europe logo" title="NPR Europe" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, aspernatur.">
+					</div>
+
 				</div>
+
+				<section class="man-info">
+					<section class="main">
+						<h3></h3>
+						<p></p>
+					</section>
+					<section class="side">
+						<img src="img/man-thumb/glaser.png" alt="" class="logo">
+						<div class="web">
+							<span><i class="fas fa-at"></i> Web: </span>
+							<span>SAMPLE WEB PAGE</span>
+						</div>
+						<div class="catalogue">
+							<span><i class="fas fa-file-alt"></i> Katalog: </span>
+							<span>SAMPLE CATALOGUE</span>
+						</div>
+					</section>
+				</section>
 			</section>
 			
-			<embed src="certificate.pdf" width="800px" height="2100px" />
+			<div class="certificate">
+				<img class="certificate" src="img/certificate.png">
+			</div>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nam provident ullam sit, ipsam, doloremque explicabo! Quos magni eos odio quo beatae debitis quod sequi, consectetur voluptas omnis laudantium ut?</p>
 
 			<div class="parallax-window" data-parallax="scroll" data-image-src="img/engine.jpg">
 				<h3>Originalni delovi</h3>
 			</div>
 
 			<section class="text">
-				
+
 			</section>
 		</div>
 	</main>
