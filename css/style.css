@@ -8,35 +8,51 @@
 /*NAVIGATION*/
 
 header {
-	position: relative;
+	overflow: hidden;
 }
 
 header .pre-nav div.logo {
 	font-family: "Lato", sans-serif;
 	color: black;
 	font-size: 32px;
+	float: left;
+	margin: 13px 0 10px 10px;
 }
 
 header .pre-nav .burger {
 	height: 45px;
 	width: 40px;
+	float: right;
+	margin: 10px 10px 10px 0;
+	cursor: pointer;
 }
 
 header .pre-nav .burger div {
 	height: 5px;
 	width: 100%;
 	background-color: black;
-	margin: 7px;
+	margin: 7px 0;
 	border-radius: 3px;
 }
 
+header .pre-nav .burger.open div:first-of-type {
+	transform: translate(2, 1);
+}
+
+header nav {
+	clear: both;
+}
+
 header nav ul {
-	right: 0;
 }
 
 header nav ul li {
 	border-bottom: 3px solid #111;
 	height: 50px;
+}
+
+header nav ul li:first-of-type {
+	border-top: 3px solid #111;
 }
 
 header nav ul li a {
@@ -128,6 +144,18 @@ header nav ul li a {
 
 .man-info {
 	display: none;
+}
+
+.man-info .main h3 {
+	font-size: 32px;
+}
+
+.man-info .side  {
+	overflow: hidden;
+}
+
+.man-info .side img {
+	float: left;
 }
 
 div.certificate {
