@@ -1,4 +1,34 @@
 @media screen and (min-width: 750px) {
+	.navTrigger {
+		display: none;
+	}
+
+	header .container {
+		overflow: hidden;
+	}
+
+	header .pre-nav {
+		float: left;
+	}
+
+	header nav {
+		float: right;
+		display: block !important;
+	}
+
+	header nav ul li {
+		display: inline-block;
+		color: white;
+	}
+
+	header nav ul li:first-of-type {
+		border-top: none;
+	}
+
+	#o-nama {
+		padding: 20px 0;
+	}
+
 	.man-info {
 		font-size: 0;
 	}

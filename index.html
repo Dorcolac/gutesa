@@ -17,14 +17,17 @@
 	<title>Guteša doo</title>
 </head>
 <body>
+	<div class="certificate">
+		<img class="certificate" src="img/certificate.png">
+	</div>
 	<header>
 		<div class="container">
 			<section class="pre-nav">
 				<div class="logo">Guteša doo</div>
-				<div class="burger">
-					<div></div>
-					<div></div>
-					<div></div>
+				<div class="navTrigger active">
+					<i></i>
+					<i></i>
+					<i></i>
 				</div>
 			</section>
 			<nav>
@@ -39,7 +42,7 @@
 	</header>
 	<main>
 		<div class="container">
-			<section class="o-nama">
+			<section id="o-nama">
 
 				Dobro došli na web sajt firme Guteša doo.
 
@@ -47,15 +50,12 @@
 
 				Vaše je samo da nam javite šta vam je potrebno, a mi ćemo učiniti sve da  to pronađemo u što kraćem roku, i isporučimo  vam. Na našem sajtu možete pogledati s kojim proizvođačima autodelova sarađujemo. U našem lageru se nalazi veliki broj autodelova i komponenti, a da lakše pronađete ono što je potrebno, tu su katalozi proizvoda.
 
-				Ako imate bilo kakvo pitanje ili sugestiju, javite nam se, na kontakt strani možete da vidite sve naše podatke. 
-
-				USKORO NA NOVOJ LOKACIJI: CVETANOVA ĆUPRIJA 24E, BEOGRAD
 			</section>
-			<section id="">
+			<section id="proizvodjaci">
 				<h2>Proizvođači</h2>
 				<p>U ponudi imamo veliki izbor kvalitetnih proizvođača.</p>
 				<p>Kliknite na proizvođača za više detalja:</p>
-				<div id="proizvodjaci" class="manufacturers">
+				<div class="manufacturers">
 					<div class="manufacturer">
 						<img src="img/man-thumb/shell.png" alt="Shell logo" title="Shell" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, atque." data-web="https://www.shell.com/" data-cat="https://www.shell.com/motorist/find-the-right-oil.html#iframe=L3JzL2VuX0dCL2Jyb3dzZQ==">
 					</div>
@@ -85,19 +85,16 @@
 					<section class="side">
 						<img src="img/man-thumb/glaser.png" alt="" class="logo">
 						<div class="web">
-							<a href="" target="_blank"><i class="fas fa-at"></i> <span>Poseti web stranicu</span> <i class="fas fa-external-link-alt"></i></a>
+							<a class="btn draw-border" href="" target="_blank"><i class="fas fa-at"></i> <span>Web stranica</span> <i class="fas fa-external-link-alt"></i></a>
 						</div>
 						<div class="catalogue">
-							<a href="" target="_blank"><i class="fas fa-file-alt"></i> <span>Pogledaj katalog</span> <i class="fas fa-external-link-alt"></i></a>
+							<a class="btn draw-border" href="" target="_blank"><i class="fas fa-file-alt"></i> <span>Katalog</span> <i class="fas fa-external-link-alt"></i></a>
 						</div>
 					</section>
 					<div class="close-info">Zatvori detalje</div>
 				</section>
 			</section>
 			
-			<div class="certificate">
-				<img class="certificate" src="img/certificate.png">
-			</div>
 
 			<section class="text">
 
@@ -107,6 +104,7 @@
 	<footer>
 		<div class="container">Copyright gutesa.rs 2018</div>
 	</footer>
+
 	<script
 	src="https://code.jquery.com/jquery-3.3.1.min.js"
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

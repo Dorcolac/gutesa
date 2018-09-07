@@ -1,4 +1,18 @@
+/*COLORS*/
+/*
+#116568
+#5CF9FF
+#2FB0B5
+#682D06
+#B5632F
+*/
+
 /*DEFAULTS*/
+
+body {
+	background-color: #2FB0B5;
+	color: white;
+}
 
 .container {
 	max-width: 1200px;
@@ -9,6 +23,7 @@
 
 header {
 	overflow: hidden;
+	background-color: #116568;
 }
 
 header .pre-nav div.logo {
@@ -17,6 +32,7 @@ header .pre-nav div.logo {
 	font-size: 32px;
 	float: left;
 	margin: 13px 0 10px 10px;
+	color: #fff;
 }
 
 header .pre-nav .burger {
@@ -47,29 +63,221 @@ header nav ul {
 }
 
 header nav ul li {
-	border-bottom: 3px solid #111;
+	border-bottom: 3px solid #B56221;
 	height: 50px;
+	transition: .8s;
+	margin: 0 5px;
+}
+
+header nav ul li:hover {
+	background-color: #2FB0B5;
+	border-bottom-color: #682D06
+}
+
+header nav ul li a:hover {
+	color: #682D06;
+
 }
 
 header nav ul li:first-of-type {
-	border-top: 3px solid #111;
+	border-top: 3px solid #B56221;
 }
 
 header nav ul li a {
 	font-family: 'Titillium Web', sans-serif;
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
 	display: block;
 	line-height: 50px;
 	vertical-align: middle;
 	font-size: 16px;
+	box-sizing: border-box;
+	padding: 0 20px;
 }
+
+/*BURGER MENU*/
+
+.navTrigger {
+	cursor: pointer;
+	width: 30px;
+	height: 25px;
+	margin: auto;
+	float: right;
+	margin: 15px;
+	
+}
+.navTrigger i {
+	background-color: #000;
+	border-radius: 2px;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 4px;
+}
+.navTrigger i:nth-child(1) {
+	-webkit-animation: outT 0.8s backwards;
+	animation: outT 0.8s backwards;
+	-webkit-animation-direction: reverse;
+	animation-direction: reverse;
+}
+.navTrigger i:nth-child(2) {
+	margin: 5px 0;
+	-webkit-animation: outM 0.8s backwards;
+	animation: outM 0.8s backwards;
+	-webkit-animation-direction: reverse;
+	animation-direction: reverse;
+}
+.navTrigger i:nth-child(3) {
+	-webkit-animation: outBtm 0.8s backwards;
+	animation: outBtm 0.8s backwards;
+	-webkit-animation-direction: reverse;
+	animation-direction: reverse;
+}
+.navTrigger.active i:nth-child(1) {
+	-webkit-animation: inT 0.8s forwards;
+	animation: inT 0.8s forwards;
+}
+.navTrigger.active i:nth-child(2) {
+	-webkit-animation: inM 0.8s forwards;
+	animation: inM 0.8s forwards;
+}
+.navTrigger.active i:nth-child(3) {
+	-webkit-animation: inBtm 0.8s forwards;
+	animation: inBtm 0.8s forwards;
+}
+@-webkit-keyframes inM {
+	50% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(45deg);
+	}
+}
+@keyframes inM {
+	50% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(45deg);
+	}
+}
+@-webkit-keyframes outM {
+	50% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(45deg);
+	}
+}
+@keyframes outM {
+	50% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(45deg);
+	}
+}
+@-webkit-keyframes inT {
+	0% {
+		-webkit-transform: translateY(0px) rotate(0deg);
+	}
+	50% {
+		-webkit-transform: translateY(9px) rotate(0deg);
+	}
+	100% {
+		-webkit-transform: translateY(9px) rotate(135deg);
+	}
+}
+@keyframes inT {
+	0% {
+		transform: translateY(0px) rotate(0deg);
+	}
+	50% {
+		transform: translateY(9px) rotate(0deg);
+	}
+	100% {
+		transform: translateY(9px) rotate(135deg);
+	}
+}
+@-webkit-keyframes outT {
+	0% {
+		-webkit-transform: translateY(0px) rotate(0deg);
+	}
+	50% {
+		-webkit-transform: translateY(9px) rotate(0deg);
+	}
+	100% {
+		-webkit-transform: translateY(9px) rotate(135deg);
+	}
+}
+@keyframes outT {
+	0% {
+		transform: translateY(0px) rotate(0deg);
+	}
+	50% {
+		transform: translateY(9px) rotate(0deg);
+	}
+	100% {
+		transform: translateY(9px) rotate(135deg);
+	}
+}
+@-webkit-keyframes inBtm {
+	0% {
+		-webkit-transform: translateY(0px) rotate(0deg);
+	}
+	50% {
+		-webkit-transform: translateY(-9px) rotate(0deg);
+	}
+	100% {
+		-webkit-transform: translateY(-9px) rotate(135deg);
+	}
+}
+@keyframes inBtm {
+	0% {
+		transform: translateY(0px) rotate(0deg);
+	}
+	50% {
+		transform: translateY(-9px) rotate(0deg);
+	}
+	100% {
+		transform: translateY(-9px) rotate(135deg);
+	}
+}
+@-webkit-keyframes outBtm {
+	0% {
+		-webkit-transform: translateY(0px) rotate(0deg);
+	}
+	50% {
+		-webkit-transform: translateY(-9px) rotate(0deg);
+	}
+	100% {
+		-webkit-transform: translateY(-9px) rotate(135deg);
+	}
+}
+@keyframes outBtm {
+	0% {
+		transform: translateY(0px) rotate(0deg);
+	}
+	50% {
+		transform: translateY(-9px) rotate(0deg);
+	}
+	100% {
+		transform: translateY(-9px) rotate(135deg);
+	}
+}
+
+#o-nama {
+	box-sizing: border-box;
+	padding: 20px;
+}
+
 
 /*MANUFACTURERS SLIDER*/
 
 #proizvodjaci {
 	background-color: #fff;
+	color: #000;
 }
 
 #proizvodjaci h2 {
@@ -139,11 +347,15 @@ header nav ul li a {
 }
 
 .slick-prev:before, .slick-next:before { 
-    color: #333;
+	color: #333;
 }
 
 .man-info {
 	display: none;
+}
+
+.man-info .main {
+	vertical-align: top;
 }
 
 .man-info .main h3 {
@@ -158,15 +370,74 @@ header nav ul li a {
 	float: left;
 }
 
+.draw-border {
+	box-shadow: inset 0 0 0 4px #58afd1;
+	color: #58afd1;
+	transition: color 0.25s 0.0833333333s;
+	position: relative;
+}
+.draw-border::before, .draw-border::after {
+	border: 0 solid transparent;
+	box-sizing: border-box;
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 0;
+	right: 0;
+}
+.draw-border::before {
+	border-bottom-width: 4px;
+	border-left-width: 4px;
+}
+.draw-border::after {
+	border-top-width: 4px;
+	border-right-width: 4px;
+}
+.draw-border:hover {
+	color: #ffe593;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+	border-color: #ffe593;
+	transition: border-color 0s, width 0.25s, height 0.25s;
+	width: 100%;
+	height: 100%;
+}
+.draw-border:hover::before {
+	transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+	transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	line-height: 1.5;
+	font: 700 1.2rem 'Roboto Slab', sans-serif;
+	padding: 1em 2em;
+	letter-spacing: 0.05rem;
+}
+
 div.certificate {
-	text-align: center;
-	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	z-index: 200;
+	display: none;
 }
 
 img.certificate {
 	max-width: 100%;
 	max-height: 100vh;
-	padding: 5%;
+	padding: 20px;
+	background-color: black;
 	box-sizing: border-box;
 }
 
