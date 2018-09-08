@@ -57,6 +57,7 @@ header .pre-nav .burger.open div:first-of-type {
 
 header nav {
 	clear: both;
+	display: none;
 }
 
 header nav ul {
@@ -65,7 +66,7 @@ header nav ul {
 header nav ul li {
 	border-bottom: 3px solid #B56221;
 	height: 50px;
-	transition: .8s;
+	transition: .6s;
 	margin: 0 5px;
 }
 
@@ -94,6 +95,7 @@ header nav ul li a {
 	font-size: 16px;
 	box-sizing: border-box;
 	padding: 0 20px;
+	transition: .6s;
 }
 
 /*BURGER MENU*/
@@ -272,6 +274,12 @@ header nav ul li a {
 	padding: 20px;
 }
 
+#o-nama h2 {
+	font-size: 2em;
+	border-left: 5px solid #B5632F;
+	padding-left: 10px;
+	margin-bottom: 14px;
+}
 
 /*MANUFACTURERS SLIDER*/
 
@@ -362,63 +370,45 @@ header nav ul li a {
 	font-size: 32px;
 }
 
+#proizvodjaci .man-info .main p {
+	text-align: left;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
 .man-info .side  {
 	overflow: hidden;
 }
 
 .man-info .side img {
 	float: left;
+	max-height: 40%;
+	max-width: 40%;
 }
 
-.draw-border {
-	box-shadow: inset 0 0 0 4px #58afd1;
-	color: #58afd1;
-	transition: color 0.25s 0.0833333333s;
-	position: relative;
-}
-.draw-border::before, .draw-border::after {
-	border: 0 solid transparent;
-	box-sizing: border-box;
-	content: '';
-	pointer-events: none;
-	position: absolute;
-	width: 0;
-	height: 0;
-	bottom: 0;
-	right: 0;
-}
-.draw-border::before {
-	border-bottom-width: 4px;
-	border-left-width: 4px;
-}
-.draw-border::after {
-	border-top-width: 4px;
-	border-right-width: 4px;
-}
-.draw-border:hover {
-	color: #ffe593;
-}
-.draw-border:hover::before, .draw-border:hover::after {
-	border-color: #ffe593;
-	transition: border-color 0s, width 0.25s, height 0.25s;
-	width: 100%;
-	height: 100%;
-}
-.draw-border:hover::before {
-	transition-delay: 0s, 0s, 0.25s;
-}
-.draw-border:hover::after {
-	transition-delay: 0s, 0.25s, 0s;
-}
-
-.btn {
+.man-info .side a {
+	text-decoration: none;
+	display: inline-block;
 	background: none;
 	border: none;
 	cursor: pointer;
-	line-height: 1.5;
 	font: 700 1.2rem 'Roboto Slab', sans-serif;
-	padding: 1em 2em;
-	letter-spacing: 0.05rem;
+	padding: 0.5em 1em;
+	letter-spacing: 0.03rem;
+	border: 3px solid #682D06;
+	color: #682D06;
+	margin: 5px 0;
+	transition: .7s;
+}
+
+.man-info .side a:hover {
+	color: #116568;
+	border-color: #116568;
+}
+
+.fas.fa-external-link-alt {
+	font-size: 40%;
+	vertical-align: top;
 }
 
 div.certificate {
@@ -441,21 +431,56 @@ img.certificate {
 	box-sizing: border-box;
 }
 
-
-/*PARALLAX*/
-
-.parallax-window {
-	min-height: 400px;
-	background: transparent;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	font-size: 300%;
+#web-shop {
+	min-height: 200px;
+	background-image: url('../img/engine.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;	
 }
 
+#web-shop .overlay {
+	background-color: rgba(0, 50, 50, .7);
+	min-height: 200px;
+	width: 100%;
+	text-align: center;
+}
+
+#web-shop a {
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	border: 5px solid white;
+	font: 700 1.2rem 'Roboto Slab', sans-serif;
+	padding: 1em 2em;
+	margin: 50px 0 20px 0;
+	transition: .6s;
+	position: relative;
+}
+
+#web-shop a:hover {
+	border-color: #B5632F;
+	color: #B5632F;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, .7);
+}
+
+#web-shop p {
+	font-style: italic;
+}
+
+#kontakt {
+	width: 300px;
+	height: 300px;
+}
+
+#kontakt > * {
+	width: 300px;
+	height: 300px;
+}
 
 footer {
-	background-color: #000;
+	background-color: #116568;
 	color: #fff;
 }

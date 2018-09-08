@@ -25,10 +25,6 @@
 		border-top: none;
 	}
 
-	#o-nama {
-		padding: 20px 0;
-	}
-
 	.man-info {
 		font-size: 0;
 	}
@@ -58,4 +54,12 @@
 		font-size: 16px;
 	}
 
+}
+
+@media screen and (min-width: 1200px) {
+
+	#o-nama {
+		padding: 20px 0;
+	}
+	
 }
