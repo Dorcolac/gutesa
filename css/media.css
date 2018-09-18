@@ -54,6 +54,25 @@
 		font-size: 16px;
 	}
 
+	#web-shop .overlay  {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contact {
+		overflow: hidden;
+	}
+
+	#web-shop, #web-shop .overlay {
+		min-height: 400px;
+	}
+
+	#mapa, #kontakt {
+		width: 50%;
+		float: left;
+	}
+
 }
 
 @media screen and (min-width: 1200px) {

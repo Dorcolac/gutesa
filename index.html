@@ -32,8 +32,8 @@
 			</section>
 			<nav>
 				<ul>
-					<li><a href=""><i class="fas fa-wrench"></i> Proizvođači</a></li>
-					<li><a href=""><i class="fas fa-shopping-cart"></i> Web shop</a></li>
+					<li><a href="#proizvodjaci"><i class="fas fa-wrench"></i> Proizvođači</a></li>
+					<li><a href="#web-shop"><i class="fas fa-shopping-cart"></i> Web shop</a></li>
 					<li><a href=""><i class="fas fa-map-marked-alt"></i> Kako do nas</a></li>
 					<li><a href=""><i class="fas fa-phone"></i> Kontakt</a></li>
 				</ul>
@@ -45,25 +45,28 @@
 			<section id="o-nama">
 				<h2>O nama</h2>
 
-				<p>Dobro došli na web sajt firme Guteša doo.</p>
+				<p>Dobro došli na web prezentaciju firme Guteša doo.</p>
 
-				<p>Mi smo veleprodaja autodelova za automobile i kamione, sa desetogodišnjim iskustvom. U svom asortimanu imamo veoma veliki broj artikala od više eminentih proizvođača autodelova, a naš rad karakterišu preciznost i veoma brza isporuka. Rastemo i razvijamo se poštujući pre svega zahteve tržišta i želje kupca.</p>
+				<p>Bavimo se veleprodajom autodelova za automobile i kamione i u toj oblasti imamo desetogodišnje iskustvo. U svom asortimanu imamo veoma veliki broj artikala od više eminentih proizvođača autodelova, a naš rad karakterišu preciznost i veoma brza isporuka. Rastemo i razvijamo se poštujući pre svega zahteve tržišta i želje kupca.</p>
 
 				<p>Vaše je samo da nam javite šta vam je potrebno, a mi ćemo učiniti sve da  to pronađemo u što kraćem roku, i isporučimo  vam. Na našem sajtu možete pogledati s kojim proizvođačima autodelova sarađujemo. U našem lageru se nalazi veliki broj autodelova i komponenti, a da lakše pronađete ono što je potrebno, tu su katalozi proizvoda.</p>
 
 				<div class="shell">
-					<img src="" alt="">
 
 					<p>Sa ponosom ističemo da smo ovlašćeni prodavci za Shell motorna ulja.</p>
 
 					<button>Pogledaj sertifikat</button>
+
+					<img src="img/man/shell_logo.png" alt="">
 				</div>
 
 			</section>
-			<section id="proizvodjaci">
-				<h2>Proizvođači</h2>
-				<p>U ponudi imamo veliki izbor kvalitetnih proizvođača.</p>
-				<p>Kliknite na proizvođača za više detalja:</p>
+		</div>
+		<section id="proizvodjaci">
+			<h2>Proizvođači</h2>
+			<p>U ponudi imamo veliki izbor kvalitetnih proizvođača.</p>
+			<p>Kliknite na proizvođača za više detalja:</p>
+			<div class="container">
 				<div class="manufacturers">
 					<div class="manufacturer">
 						<img src="img/man-thumb/shell.png" alt="Shell logo" title="Shell" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, atque." data-web="https://www.shell.com/" data-cat="https://www.shell.com/motorist/find-the-right-oil.html#iframe=L3JzL2VuX0dCL2Jyb3dzZQ==">
@@ -102,29 +105,45 @@
 					</section>
 					<div class="close-info">Zatvori detalje</div>
 				</section>
-			</section>
-			
-			<section id="web-shop">
-				<div class="overlay">
+			</div>
+		</section>
+
+		<section id="web-shop">
+			<div class="overlay">
+				<div class="holder">
 					<a href="https://portal.wings.rs/gutesa" target="_blank"><i class="fas fa-shopping-cart"></i> Web shop <i class="fas fa-external-link-alt"></i></a>
 					<p>Za otvaranje naloga za pristup web shop-u potrebno je da nas kontaktirate.</p>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section id="kontakt">
-				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:0px;width:0px;'><div id='gmap_canvas' style='height:0px;width:0px;'></div><div><small><a href="https://embedgooglemaps.com/it/">embedgooglemaps IT</a></small></div><div><small><a href="https://mrdiscountcode.hk/">http://mrdiscountcode.hk/</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(44.7671917,20.513779),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(44.7671917,20.513779)});infowindow = new google.maps.InfoWindow({content:'<strong>Guteša doo</strong><br>Cvetanova Ćuprija 24E<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-			</section>
-		</div>
+
+		<section class="contact">
+			<div class="container">
+				<div id="mapa" class="map">MESTO ZA GOOGLE MAPU</div>
+
+				<section id="kontakt">
+					<h2>Kontakt</h2>
+					<form action="">
+						<input type="text" name="" placeholder="Ime i premize *">
+						<input type="text" name="" placeholder="E-mail *">
+						<input type="text" name="" placeholder="Telefon">
+						<textarea name="" id="" cols="30" rows="10" placeholder="Poruka *"></textarea>
+						<p>Polja označena zvezdicom (*) su obavezna.</p>
+						<input type="submit" value="POŠALJI">
+					</form>
+				</section>
+			</div>
+		</section>
 	</main>
 	<footer>
-		<div class="container">Copyright gutesa.rs 2018</div>
+		<div class="container">&copy gutesa.rs 2018</div>
 	</footer>
 
 	<script
 	src="https://code.jquery.com/jquery-3.3.1.min.js"
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	crossorigin="anonymous"></script>
-	<script src="js/parallax.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
