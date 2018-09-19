@@ -60,15 +60,19 @@
 		align-items: center;
 	}
 
-	.contact {
-		overflow: hidden;
-	}
-
 	#web-shop, #web-shop .overlay {
 		min-height: 400px;
 	}
 
-	#mapa, #kontakt {
+	#kontakt {
+		overflow: hidden;
+	}
+
+	#mapa {
+		height: 600px;
+	}
+
+	#kontakt-info, #kontakt-forma {
 		width: 50%;
 		float: left;
 	}
