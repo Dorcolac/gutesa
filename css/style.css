@@ -19,19 +19,29 @@ body {
 	margin: 0 auto;
 }
 
+h2, h3 {
+	font-family: 'Roboto Slab', sans-serif;
+	font-style: italic;
+}
+
 /*NAVIGATION*/
 
 header {
 	overflow: hidden;
 	background-color: #116568;
+	position: fixed;
+	top: 0;
+	z-index: 200;
+	margin: 0 auto;
+	width: 100%;
 }
 
 header .pre-nav div.logo {
-	font-family: "Lato", sans-serif;
+	font-family: "Roboto Slab", sans-serif;
 	color: black;
 	font-size: 2em;
 	float: left;
-	margin: 13px 0 10px 10px;
+	margin: 13px 0 8px 10px;
 	color: #fff;
 }
 
@@ -56,8 +66,8 @@ header .pre-nav .burger.open div:first-of-type {
 }
 
 header nav {
-	clear: both;
 	display: none;
+	clear: left;
 }
 
 header nav ul li {
@@ -80,6 +90,10 @@ header nav ul li:hover i {
 	color: #682D06;
 }
 
+header nav ul li:hover a {
+	text-shadow: 0 0 10px #116568;
+}
+
 header nav ul li:first-of-type {
 	border-top: 3px solid #B56221;
 }
@@ -96,7 +110,7 @@ header nav ul li a {
 	font-size: 16px;
 	box-sizing: border-box;
 	padding: 0 20px;
-	transition: .6s;
+
 }
 
 /*BURGER MENU*/
@@ -270,31 +284,72 @@ header nav ul li a {
 	}
 }
 
+main {
+	margin-top: 150px;
+}
+
 #o-nama {
 	box-sizing: border-box;
 	padding: 20px;
-	font-family: "Lato";
+	font-family: "Titillium Web";
 	margin: 50px 0;
 }
 
 #o-nama h2 {
-	font-family: "Lato";
-	font-weight: bold;
 	font-size: 2em;
-	border-left: 5px solid #B5632F;
 	padding-left: 10px;
-	margin-bottom: 14px;
+	margin-bottom: 50px;
+	text-align: center;
 }
 
-.shell {
+#o-nama h2 span {
+	border-left: 5px solid #B5632F;
+	margin-right: 20px;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px 10px;
 }
 
-.shell img {
-	max-height: 80px;
+.badges {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.badge {
+	max-width: 270px;
+	margin-bottom: 1em;
+}
+
+.badge h3 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.badge p {
+	background-color: #116568;
+	box-sizing: border-box;
+	padding: 10px;
+	height: 90px;
+}
+
+.badge .icon {
+	padding: 1.5em;
+	background-color: #fff;
+	box-sizing: border-box;
+	color: #2FB0B5;
+	text-align: center;
+}
+
+.badge .icon i {
+	font-size: 3.5em;
+}
+
+.badge .icon img {
+	max-width: 3.5em;
 }
 
 /*MANUFACTURERS SLIDER*/
-
 #proizvodjaci {
 	background-color: #fff;
 	color: #000;
@@ -302,21 +357,27 @@ header nav ul li a {
 
 #proizvodjaci h2 {
 	text-align: center;
-	font-family: "Lato", sans-serif;
-	font-weight: 700;
 	font-size: 32px;
 	padding: 20px 0;
 	margin: 0;
 }
 
+#proizvodjaci h2 span {
+	border-left: 5px solid #116568;
+	margin-right: 20px;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px 10px;
+}
+
 #proizvodjaci p {
 	text-align: center;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Titillium Web", sans-serif;
 }
 
 #proizvodjaci p:last-of-type {
 	font-style: italic;
-	font-family: "Times", serif;
+	font-family: "Titillium Web", serif;
 }
 
 .manufacturers .manufacturer {
@@ -469,7 +530,7 @@ img.certificate {
 	color: white;
 	display: inline-block;
 	border: 5px solid white;
-	font: 700 1.2rem 'Roboto Slab', sans-serif;
+	font: 700 1.2rem 'Open Sans', sans-serif;
 	padding: 1em 2em;
 	margin: 100px 0 20px 0;
 	transition: .6s;
@@ -544,4 +605,5 @@ footer {
 	color: #fff;
 	padding: 20px;
 	box-sizing: border-box;
+	font-style: italic;
 }

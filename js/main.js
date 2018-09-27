@@ -60,13 +60,29 @@ $('.navTrigger').click(function(){
 	$(this).toggleClass('active');
 });
 
-
+// SMOOTH SCROLL
 $('a[href^="#"]').on('click', function(event) {
-    var target = $(this.getAttribute('href'));
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 800);
-    }
+	var target = $(this.getAttribute('href'));
+	if( target.length ) {
+		event.preventDefault();
+		$('html, body').stop().animate({
+			scrollTop: target.offset().top
+		}, 800);
+	}
 });
+
+// SHRINK NAV
+document.addEventListener("scroll", myFunction);
+
+function myFunction() {
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+		document.querySelector('header nav').classList.add('shrink');
+	} else {
+		document.querySelector('header nav').classList.remove('shrink');
+	}
+}

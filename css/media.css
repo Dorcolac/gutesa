@@ -1,4 +1,4 @@
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 840px) {
 	.navTrigger {
 		display: none;
 	}
@@ -12,8 +12,16 @@
 	}
 
 	header nav {
+		transition: .5s;
+		transition-delay: 0;
+		clear: none;
+		margin-top: 50px;
 		float: right;
 		display: block !important;
+	}
+
+	header nav.shrink {
+		margin-top: 0;
 	}
 
 	header nav ul li {
@@ -30,12 +38,15 @@
 	}
 
 	.man-info .close-info {
+		border: none;
 		font-size: 16px;
 		line-height: 20px;
 		vertical-align: middle;
 		text-align: center;
 		background-color: black;
 		color: white;
+		display: block;
+		margin: 0 auto;
 	}
 
 	.man-info .main,
@@ -69,14 +80,28 @@
 	}
 
 	#mapa {
-		height: 600px;
+		float: left;
+		width: 40%;
+	}
+
+	#kontakt-info {
+		width: 30%;
+	}
+
+	#kontakt-forma {
+		width: 30%;
 	}
 
 	#kontakt-info, #kontakt-forma {
-		width: 50%;
 		float: left;
 	}
 
+}
+
+@media screen and (max-width: 1137px) {
+	.badges {
+		justify-content: space-around;
+	}
 }
 
 @media screen and (min-width: 1200px) {
