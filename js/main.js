@@ -81,8 +81,8 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-		document.querySelector('header nav').classList.add('shrink');
+		document.querySelector('header').classList.add('shrink');
 	} else {
-		document.querySelector('header nav').classList.remove('shrink');
+		document.querySelector('header').classList.remove('shrink');
 	}
 }

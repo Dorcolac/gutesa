@@ -20,8 +20,16 @@
 		display: block !important;
 	}
 
-	header nav.shrink {
+	header.shrink nav {
 		margin-top: 0;
+	}
+
+	header .pre-nav div.logo {
+		font-size: 2.5em;
+	}
+
+	header.shrink .pre-nav .logo {
+		font-size: 2em;
 	}
 
 	header nav ul li {
@@ -72,7 +80,7 @@
 	}
 
 	#web-shop, #web-shop .overlay {
-		min-height: 400px;
+		min-height: 30em;
 	}
 
 	#kontakt {
@@ -106,8 +114,6 @@
 
 @media screen and (min-width: 1200px) {
 
-	#o-nama {
-		padding: 20px 0;
-	}
+	
 	
 }
