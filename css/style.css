@@ -11,12 +11,20 @@
 
 body {
 	background-color: #2FB0B5;
-	color: white;
+	color: #fff;
+	font-family: "Titillium Web", sans-serif;
 }
 
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+header,
+section,
+footer,
+nav {
+	display: block;
 }
 
 h2, h3 {
@@ -43,7 +51,7 @@ header .pre-nav div.logo {
 	float: left;
 	margin: 13px 0 8px 10px;
 	color: #fff;
-	transition: .6s;
+	transition: .3s;
 }
 
 header .pre-nav .burger {
@@ -78,11 +86,11 @@ header nav > ul {
 header nav ul li {
 	border-bottom: 3px solid #B56221;
 	height: 50px;
-	transition: .6s;
+	transition: .4s;
 }
 
 header nav ul li i {
-	transition: .6s;
+	transition: .4s;
 }
 
 header nav ul li:hover {
@@ -103,7 +111,6 @@ header nav ul li:first-of-type {
 }
 
 header nav ul li a {
-	font-family: 'Titillium Web', sans-serif;
 	font-style: italic;
 	color: #fff;
 	text-decoration: none;
@@ -290,9 +297,15 @@ header nav ul li a {
 
 #o-nama {
 	box-sizing: border-box;
-	padding: 20px;
-	font-family: "Titillium Web";
-	padding: 220px 0 150px 0;
+	background: url('../img/repair.jpg');
+	background-position: center 20%;
+	background-size: cover;
+}
+
+#o-nama .overlay {
+	padding: 14em 0 8em 0;
+	background-color: rgba(0, 0, 0, .6);
+	height: 100%;
 }
 
 #o-nama h2 {
@@ -332,7 +345,7 @@ header nav ul li a {
 	background-color: #116568;
 	box-sizing: border-box;
 	padding: 10px;
-	height: 90px;
+	height: 100px;
 	line-height: 1.3em;
 	text-align: center;
 }
@@ -358,10 +371,11 @@ header nav ul li a {
 #proizvodjaci {
 	background-color: #fff;
 	color: #000;
-	padding: 4em 0 2em 0;
+	padding: 8em 0 8em 0;
 }
 
 #proizvodjaci h2 {
+	font-weight: 700;
 	text-align: center;
 	font-size: 32px;
 	padding: 20px 0;
@@ -378,12 +392,10 @@ header nav ul li a {
 
 #proizvodjaci p {
 	text-align: center;
-	font-family: "Titillium Web", sans-serif;
 }
 
 #proizvodjaci p:last-of-type {
 	font-style: italic;
-	font-family: "Titillium Web", serif;
 }
 
 .manufacturers {
@@ -450,12 +462,18 @@ header nav ul li a {
 	display: none;
 }
 
+.man-info * {
+}
+
 .man-info .main {
 	vertical-align: top;
+	box-sizing: border-box;
+	padding: 30px;
 }
 
 .man-info .main h3 {
 	font-size: 32px;
+	color: #116568;
 }
 
 #proizvodjaci .man-info .main p {
@@ -465,13 +483,17 @@ header nav ul li a {
 }
 
 .man-info .side  {
+	box-sizing: border-box;
 	overflow: hidden;
+	text-align: center;
+	border-right: 1px solid #B56221;
 }
 
 .man-info .side img {
-	float: left;
-	max-height: 40%;
-	max-width: 40%;
+	/*float: left;*/
+	max-height: 88px;
+	max-width: 176px;
+	margin: 20px 0;
 }
 
 .man-info .side a {
@@ -480,18 +502,53 @@ header nav ul li a {
 	background: none;
 	border: none;
 	cursor: pointer;
-	font: 700 1.2rem 'Roboto Slab', sans-serif;
+	font: 700 1rem 'Roboto Slab', sans-serif;
 	padding: 0.5em 1em;
 	letter-spacing: 0.03rem;
 	border: 3px solid #682D06;
-	color: #682D06;
-	margin: 5px 0;
-	transition: .7s;
+	background-color: #682D06;
+	color: #fff;
+	margin: 2px 0;
+	transition: .4s;
+	width: 176px;
 }
 
 .man-info .side a:hover {
-	color: #116568;
-	border-color: #116568;
+	background-color: #fff;
+	color: #682D06;
+}
+
+.man-info .close-info {
+	margin: 120px auto;
+	border: none;
+	font-size: 16px;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+	background-color: #fff;
+	color: #2FB0B5;
+	cursor: pointer;
+	border-radius: 100%;
+	padding: 12px;
+	display: block;
+	margin: 0 auto;
+	transition: .4s;
+}
+
+.man-info .close-info:hover {
+	color: #fff;
+	background-color: #2FB0B5;
+}
+
+.man-info .close-info i {
+	font-size: 3em;
+}
+
+.man-info .close-info div {
+	font-style: italic;
+	font-size: 0.8em;
+	position: relative;
+	top: -8px;
 }
 
 .fas.fa-external-link-alt {
@@ -520,8 +577,8 @@ img.certificate {
 }
 
 #web-shop {
-	min-height: 200px;
-	background: url('../img/repair.jpg');
+	min-height: 60vh;
+	background: url('../img/antique.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -530,9 +587,12 @@ img.certificate {
 
 #web-shop .overlay {
 	background-color: rgba(0, 0, 0, .8);
-	min-height: 14em;
+	min-height: 60vh;
 	width: 100%;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #web-shop a {
@@ -540,17 +600,16 @@ img.certificate {
 	color: white;
 	display: inline-block;
 	border: 5px solid white;
-	font: 700 1.2rem 'Open Sans', sans-serif;
+	font: 700 1.4rem 'Roboto Slab', sans-serif;
 	padding: 1em 2em;
 	margin: 100px 0 20px 0;
-	transition: .6s;
+	transition: .3s;
 	position: relative;
 }
 
 #web-shop a:hover {
 	border-color: #B5632F;
 	color: #B5632F;
-	border-radius: 10px;
 	background-color: rgba(255, 255, 255, .7);
 }
 
@@ -559,14 +618,25 @@ img.certificate {
 	padding-bottom: 100px;
 }
 
-#mapa {
+#lokacija h2 {
+	position: absolute;
+	background-color: rgba(50, 50, 50, .6);
+	margin-top: 3em;
+	padding: 2em 0;
 	width: 100%;
-	height: 400px;
-	background-color: darkgreen;
+	text-align: center;
+}
+
+#lokacija #map {
+	width: 100%;
+	height: 80vh;
+	background-image: url('https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 #kontakt-info {
-	background-color: darkseagreen;
+
 	height: 400px;
 }
 
@@ -577,9 +647,9 @@ img.certificate {
 }
 
 #kontakt-forma h2 {
+	font-family: "Roboto Slab", sans-serif;
 	font-size: 2em;
-	font-family: "Lato";
-	font-weight: 700;
+	/*font-weight: 700;*/
 	border-left: 5px solid #B5632F;
 	padding-left: 10px;
 }
@@ -602,10 +672,10 @@ form input, form textarea {
 
 form p {
 	font-style: italic;
-	font-family: "Times", serif;
 }
 
-form input[type="submit"], form input[type="reset"] {
+form input[type="submit"],
+form input[type="reset"] {
 	width: 10em;
 }
 

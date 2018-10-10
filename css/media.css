@@ -45,18 +45,6 @@
 		font-size: 0;
 	}
 
-	.man-info .close-info {
-		border: none;
-		font-size: 16px;
-		line-height: 20px;
-		vertical-align: middle;
-		text-align: center;
-		background-color: black;
-		color: white;
-		display: block;
-		margin: 0 auto;
-	}
-
 	.man-info .main,
 	.man-info .side
 	{
@@ -64,12 +52,12 @@
 	}
 
 	.man-info .main {
-		width: 60%;
+		width: 70%;
 		font-size: 16px;
 	}
 
 	.man-info .side {
-		width: 40%;
+		width: 30%;
 		font-size: 16px;
 	}
 
@@ -80,24 +68,19 @@
 	}
 
 	#web-shop, #web-shop .overlay {
-		min-height: 30em;
+		/*min-height: 30em;*/
 	}
 
 	#kontakt {
 		overflow: hidden;
 	}
 
-	#mapa {
-		float: left;
-		width: 40%;
-	}
-
 	#kontakt-info {
-		width: 30%;
+		width: 50%;
 	}
 
 	#kontakt-forma {
-		width: 30%;
+		width: 50%;
 	}
 
 	#kontakt-info, #kontakt-forma {

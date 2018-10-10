@@ -17,9 +17,9 @@
 	<title>Guteša doo</title>
 </head>
 <body>
-	<div class="certificate">
+	<!-- <div class="certificate">
 		<img class="certificate" src="img/certificate.png">
-	</div>
+	</div> -->
 	<header>
 		<div class="container">
 			<section class="pre-nav">
@@ -34,16 +34,17 @@
 				<ul>
 					<li><a href="#proizvodjaci"><i class="fas fa-wrench"></i> Proizvođači</a></li>
 					<li><a target="_blank" href="https://portal.wings.rs/gutesa"><i class="fas fa-shopping-cart"></i> Web shop</a></li>
-					<li><a href="#mapa"><i class="fas fa-map-marked-alt"></i> Kako do nas</a></li>
+					<li><a href="#lokacija"><i class="fas fa-map-marked-alt"></i> Kako do nas</a></li>
 					<li><a href="#kontakt"><i class="fas fa-phone"></i> Kontakt</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<main>
-		<div class="container">
-			<section id="o-nama">
-				<!-- <h2><span>Zašto mi?</span></h2> -->
+		<section id="o-nama">
+			<div class="overlay">
+				<div class="container">
+					<!-- <h2><span>Zašto mi?</span></h2> -->
 
 <!-- 				<p>Dobrodošli na web prezentaciju firme Guteša doo.</p>
 
@@ -64,7 +65,7 @@
 							<h3>Kvalitet</h3>
 							<i class="fas fa-award"></i>
 						</div>
-						<p>U našem asortimanu imamo veoma veliki broj artikala od više eminentih proizvođača autodelova.</p>
+						<p>U našem asortimanu imamo veoma veliki broj artikala, kako originalnih, tako i od više eminentih proizvođača autodelova.</p>
 					</section>
 					<section class="badge">
 						<div class="icon">
@@ -81,121 +82,125 @@
 						<p>Sa ponosom ističemo da smo ovlašćeni prodavci za Shell motorna ulja.</p>
 					</section>
 				</div>
-
-			</section>
+			</div>
 		</div>
-		<section id="proizvodjaci">
-			<h2><span>Proizvođači</span></h2>
-			<p>U ponudi imamo veliki izbor kvalitetnih proizvođača.</p>
-			<p>Kliknite na proizvođača za više detalja:</p>
+	</section>
+	<section id="proizvodjaci">
+		<h2><span>Proizvođači</span></h2>
+		<!-- <p>U ponudi imamo veliki izbor kvalitetnih proizvođača.</p> -->
+		<p>Kliknite na proizvođača za više detalja:</p>
+		<div class="container">
+			<div class="manufacturers">
+				<div class="manufacturer">
+					<img src="img/man-thumb/shell.png" alt="Shell logo" title="Shell" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, atque." data-web="https://www.shell.com/" data-cat="https://www.shell.com/motorist/find-the-right-oil.html#iframe=L3JzL2VuX0dCL2Jyb3dzZQ==">
+				</div>
+				<div class="manufacturer">
+					<img src="img/man-thumb/automega.jpg" alt="AutoMega logo" title="AutoMega" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, impedit!" data-web="https://www.automega.biz/" data-cat="https://www.automega.biz/">
+				</div>
+				<div class="manufacturer">
+					<img src="img/man-thumb/blueprint.jpg" alt="Blue Print logo" title="Blue Print" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa." data-web="https://www.blue-print.de/" data-cat="https://partsfinder.bilsteingroup.com/sr">
+				</div>
+				<div class="manufacturer">
+					<img src="img/man-thumb/febi.png" alt="Febi Bilstein logo" title="Febi Bilstein" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, fuga." data-web="https://www.febi.com/sr/" data-cat="https://partsfinder.bilsteingroup.com/?lang=SB">
+				</div>
+				<div class="manufacturer">
+					<img src="img/man-thumb/glaser.png" alt="Glaser logo" title="Glaser" data-desc="<p><strong>Glaser<strong> je španska fabrika zaptivača (dihtung glave, poklopca ventila, kartera, usisne i izduvne grane), gumica ventila, semeringa i šrafova glave. Osim španske automobilske industrije, <strong>Glaser<strong> snabdeva i druge poznate proizvođače vozila širom sveta.</p><p>Dokaz kvaliteta je i nagrada “Najbolji Snabdevač Nissana 2000” koju je ova fabrika dobila.</p><p><strong>Glaser<strong> proizvodi predstavljaju optimalan odnos cene i kvaliteta.</p>" data-web="https://glaser.es/" data-cat="https://glaser.es/EN/Service-Downloads/Catalog.aspx">
+					</div>
+					<div class="manufacturer">
+						<img src="img/man-thumb/npr.jpg" alt="NPR Europe logo" title="NPR Europe" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, aspernatur." data-web="http://www.npr-europe.com" data-cat="http://www.npr-europe.com/index.php?article_id=3&clang=1">
+					</div>
+				</div>
+
+
+				<section class="man-info">
+					<section class="side">
+						<img src="img/man-thumb/glaser.png" alt="" class="logo">
+						<div class="web">
+							<a href="" target="_blank"><i class="fas fa-at"></i> <span>Web stranica</span> <i class="fas fa-external-link-alt"></i></a>
+						</div>
+						<div class="catalogue">
+							<a href="" target="_blank"><i class="fas fa-file-alt"></i> <span>Katalog</span> <i class="fas fa-external-link-alt"></i></a>
+						</div>
+					</section>
+					<section class="main">
+						<h3></h3>
+						<p></p>
+					</section>
+					<button class="close-info"><i class="fas fa-chevron-up"></i> <div>zatvori detalje</div></button>
+				</section>
+			</div>
+		</section>
+
+		<section id="web-shop">
+			<div class="overlay">
+				<div class="holder">
+					<a href="https://portal.wings.rs/gutesa" target="_blank"><i class="fas fa-shopping-cart"></i> Web shop <i class="fas fa-external-link-alt"></i></a>
+					<p>Za otvaranje naloga za pristup web shop-u potrebno je da nas kontaktirate.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="lokacija">
+			<h2>Kako do nas?</h2>
+			<div id="map"></div>
+
+		</section>
+
+		<section id="kontakt">
 			<div class="container">
-				<div class="manufacturers">
-					<div class="manufacturer">
-						<img src="img/man-thumb/shell.png" alt="Shell logo" title="Shell" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, atque." data-web="https://www.shell.com/" data-cat="https://www.shell.com/motorist/find-the-right-oil.html#iframe=L3JzL2VuX0dCL2Jyb3dzZQ==">
+
+				<section id="kontakt-info">
+					<div>
+						<h2>Kontakt</h2>
+
+						<ul>
+							<li>
+								<p>Boris Guteša</p>
+								<p>+381648266406</p>
+								<p>boris@gutesa.rs</p>
+							</li>
+							<li>
+								<p>Mladen Milanović</p>
+								<p>+381648268547</p>
+								<p>milanovic83@gmail.com</p>
+							</li>
+							<li>
+								<p>Dejan Krstić</p>
+								<p>+381648266413</p>
+								<p>dekissangyong@gmail.com</p>
+							</li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
 					</div>
-					<div class="manufacturer">
-						<img src="img/man-thumb/automega.jpg" alt="AutoMega logo" title="AutoMega" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, impedit!" data-web="https://www.automega.biz/" data-cat="https://www.automega.biz/">
-					</div>
-					<div class="manufacturer">
-						<img src="img/man-thumb/blueprint.jpg" alt="Blue Print logo" title="Blue Print" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa." data-web="https://www.blue-print.de/" data-cat="https://partsfinder.bilsteingroup.com/sr">
-					</div>
-					<div class="manufacturer">
-						<img src="img/man-thumb/febi.png" alt="Febi Bilstein logo" title="Febi Bilstein" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, fuga." data-web="https://www.febi.com/sr/" data-cat="https://partsfinder.bilsteingroup.com/?lang=SB">
-					</div>
-					<div class="manufacturer">
-						<img src="img/man-thumb/glaser.png" alt="Glaser logo" title="Glaser" data-desc="<p><strong>Glaser<strong> je španska fabrika zaptivača (dihtung glave, poklopca ventila, kartera, usisne i izduvne grane), gumica ventila, semeringa i šrafova glave. Osim španske automobilske industrije, <strong>Glaser<strong> snabdeva i druge poznate proizvođače vozila širom sveta.</p><p>Dokaz kvaliteta je i nagrada “Najbolji Snabdevač Nissana 2000” koju je ova fabrika dobila.</p><p><strong>Glaser<strong> proizvodi predstavljaju optimalan odnos cene i kvaliteta.</p>" data-web="https://glaser.es/" data-cat="https://glaser.es/EN/Service-Downloads/Catalog.aspx">
-						</div>
-						<div class="manufacturer">
-							<img src="img/man-thumb/npr.jpg" alt="NPR Europe logo" title="NPR Europe" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, aspernatur." data-web="http://www.npr-europe.com" data-cat="http://www.npr-europe.com/index.php?article_id=3&clang=1">
-						</div>
-					</div>
+				</section>
 
 
-					<section class="man-info">
-						<section class="main">
-							<h3></h3>
-							<p></p>
-						</section>
-						<section class="side">
-							<img src="img/man-thumb/glaser.png" alt="" class="logo">
-							<div class="web">
-								<a href="" target="_blank"><i class="fas fa-at"></i> <span>Web stranica</span> <i class="fas fa-external-link-alt"></i></a>
-							</div>
-							<div class="catalogue">
-								<a href="" target="_blank"><i class="fas fa-file-alt"></i> <span>Katalog</span> <i class="fas fa-external-link-alt"></i></a>
-							</div>
-						</section>
-						<button class="close-info"><i class="fas fa-caret-up"></i> Zatvori detalje <i class="fas fa-caret-up"></i></button>
-					</section>
-				</div>
-			</section>
+				<section id="kontakt-forma">
+					<h2>Upit za delove</h2>
+					<form action="">
+						<input type="text" name="" placeholder="Ime i prezime *">
+						<input type="text" name="" placeholder="E-mail *">
+						<input type="text" name="" placeholder="Telefon">
+						<textarea name="" id="" cols="30" rows="10" placeholder="Poruka *"></textarea>
+						<p>Polja označena zvezdicom (*) su obavezna.</p>
+						<input type="reset" value="PONIŠTI">
+						<input type="submit" value="POŠALJI">
+					</form>
+				</section>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">&copy gutesa.rs 2018</div>
+	</footer>
 
-			<section id="web-shop">
-				<div class="overlay">
-					<div class="holder">
-						<a href="https://portal.wings.rs/gutesa" target="_blank"><i class="fas fa-shopping-cart"></i> Web shop <i class="fas fa-external-link-alt"></i></a>
-						<p>Za otvaranje naloga za pristup web shop-u potrebno je da nas kontaktirate.</p>
-					</div>
-				</div>
-			</section>
-
-
-			<section id="kontakt">
-				<div class="container">
-
-					<section id="kontakt-info">
-						<div>
-							<h2>Kontakt</h2>
-
-							<ul>
-								<li>
-									<p>Boris Guteša</p>
-									<p>+381648266406</p>
-									<p>boris@gutesa.rs</p>
-								</li>
-								<li>
-									<p>Mladen Milanović</p>
-									<p>+381648268547</p>
-									<p>milanovic83@gmail.com</p>
-								</li>
-								<li>
-									<p>Dejan Krstić</p>
-									<p>+381648266413</p>
-									<p>dekissangyong@gmail.com</p>
-								</li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
-						</div>
-					</section>
-
-					<div id="mapa"></div>
-					
-					<section id="kontakt-forma">
-						<h2>Upit za delove</h2>
-						<form action="">
-							<input type="text" name="" placeholder="Ime i prezime *">
-							<input type="text" name="" placeholder="E-mail *">
-							<input type="text" name="" placeholder="Telefon">
-							<textarea name="" id="" cols="30" rows="10" placeholder="Poruka *"></textarea>
-							<p>Polja označena zvezdicom (*) su obavezna.</p>
-							<input type="reset" value="PONIŠTI">
-							<input type="submit" value="POŠALJI">
-						</form>
-					</section>
-				</div>
-			</section>
-		</main>
-		<footer>
-			<div class="container">&copy gutesa.rs 2018</div>
-		</footer>
-
-		<script
-		src="https://code.jquery.com/jquery-3.3.1.min.js"
-		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		crossorigin="anonymous"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-		<script src="js/main.js"></script>
-	</body>
-	</html>
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
