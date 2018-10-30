@@ -40,12 +40,19 @@ $('.manufacturers').on('click', '.slick-slide', function (e) {
 	var desc = $(this).find('img').attr('data-desc');
 	var web = $(this).find('img').attr('data-web');
 	var cat = $(this).find('img').attr('data-cat');
+	var cert = $(this).find('img').attr('data-cert');
 	$('.manufacturers').slick('slickGoTo', index);
 	$('.man-info h3').html(name);
 	$('.man-info p').html(desc);
 	$('.man-info .side .catalogue a').attr('href', cat);
 	$('.man-info .side .web a').attr('href', web);
 	$('.man-info .side img').attr('src', src);
+	if (cert) {
+		$('.man-info .side .certif').css('display', 'block');
+		$('.man-info .side .certif a').attr('href', cert);
+	} else {
+		$('.man-info .side .certif').css('display', 'none');
+	}
 	$('.man-info').slideDown();
 	$('.manufacturers').slick('slickPause');
 });

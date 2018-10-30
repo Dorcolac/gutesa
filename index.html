@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<title>Guteša doo</title>
@@ -92,10 +92,10 @@
 		<div class="container">
 			<div class="manufacturers">
 				<div class="manufacturer">
-					<img src="img/man-thumb/shell.png" alt="Shell logo" title="Shell" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, atque." data-web="https://www.shell.com/" data-cat="https://www.shell.com/motorist/find-the-right-oil.html#iframe=L3JzL2VuX0dCL2Jyb3dzZQ==">
+					<img src="img/man-thumb/shell.png" alt="Shell logo" title="Shell" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, atque." data-web="https://www.shell.com/" data-cat="https://www.shell.com/motorist/find-the-right-oil.html#iframe=L3JzL2VuX0dCL2Jyb3dzZQ==" data-cert="asdasd">
 				</div>
 				<div class="manufacturer">
-					<img src="img/man-thumb/automega.jpg" alt="AutoMega logo" title="AutoMega" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, impedit!" data-web="https://www.automega.biz/" data-cat="https://www.automega.biz/">
+					<img src="img/man-thumb/automega.jpg" alt="AutoMega logo" title="AutoMega" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, impedit!" data-web="https://www.automega.biz/" data-cat="https://www.automega.biz/" data-cert="">
 				</div>
 				<div class="manufacturer">
 					<img src="img/man-thumb/blueprint.jpg" alt="Blue Print logo" title="Blue Print" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsa." data-web="https://www.blue-print.de/" data-cat="https://partsfinder.bilsteingroup.com/sr">
@@ -107,7 +107,7 @@
 					<img src="img/man-thumb/glaser.png" alt="Glaser logo" title="Glaser" data-desc="<p><strong>Glaser<strong> je španska fabrika zaptivača (dihtung glave, poklopca ventila, kartera, usisne i izduvne grane), gumica ventila, semeringa i šrafova glave. Osim španske automobilske industrije, <strong>Glaser<strong> snabdeva i druge poznate proizvođače vozila širom sveta.</p><p>Dokaz kvaliteta je i nagrada “Najbolji Snabdevač Nissana 2000” koju je ova fabrika dobila.</p><p><strong>Glaser<strong> proizvodi predstavljaju optimalan odnos cene i kvaliteta.</p>" data-web="https://glaser.es/" data-cat="https://glaser.es/EN/Service-Downloads/Catalog.aspx">
 					</div>
 					<div class="manufacturer">
-						<img src="img/man-thumb/npr.jpg" alt="NPR Europe logo" title="NPR Europe" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, aspernatur." data-web="http://www.npr-europe.com" data-cat="http://www.npr-europe.com/index.php?article_id=3&clang=1">
+						<img src="img/man-thumb/npr.jpg" alt="NPR Europe logo" title="NPR Europe" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, aspernatur." data-web="http://www.npr-europe.com" data-cat="http://www.npr-europe.com/index.php?article_id=3&clang=1" data-cert="">
 					</div>
 				</div>
 
@@ -120,6 +120,9 @@
 						</div>
 						<div class="catalogue">
 							<a href="" target="_blank"><i class="fas fa-file-alt"></i> <span>Katalog</span> <i class="fas fa-external-link-alt"></i></a>
+						</div>
+						<div class="certif">
+							<button><i class="fas fa-file-alt"></i> <span>Sertifikat</span> <i class="fas fa-external-link-alt"></i></button>
 						</div>
 					</section>
 					<section class="main">
@@ -151,7 +154,7 @@
 
 				<section id="kontakt-info">
 					<div>
-						<h2>Kontakt</h2>
+						<h2><span>Kontakt</span></h2>
 
 						<ul>
 							<li>
@@ -178,22 +181,22 @@
 
 
 				<section id="kontakt-forma">
-					<h2>Upit za delove</h2>
+					<h2><span>Upit za delove</span></h2>
 					<form action="">
-						<input type="text" name="" placeholder="Ime i prezime *">
-						<input type="text" name="" placeholder="E-mail *">
-						<input type="text" name="" placeholder="Telefon">
-						<textarea name="" id="" cols="30" rows="10" placeholder="Poruka *"></textarea>
+						<input type="text" name="" placeholder="Ime i prezime *" required="">
+						<input type="email" name="" placeholder="E-mail *" required="">
+						<input type="tel" name="" placeholder="Telefon">
+						<textarea name="" id="" cols="30" rows="10" placeholder="Poruka *" required=""></textarea>
 						<p>Polja označena zvezdicom (*) su obavezna.</p>
-						<input type="reset" value="PONIŠTI">
 						<input type="submit" value="POŠALJI">
+						<input type="reset" value="PONIŠTI">
 					</form>
 				</section>
 			</div>
 		</section>
 	</main>
 	<footer>
-		<div class="container">&copy gutesa.rs 2018</div>
+		<div class="container"><span>&copy</span> gutesa.rs 2018</div>
 	</footer>
 
 	<script

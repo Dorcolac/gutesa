@@ -28,7 +28,7 @@ nav {
 }
 
 h2, h3 {
-	font-family: 'Roboto Slab', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-style: italic;
 }
 
@@ -45,7 +45,7 @@ header {
 }
 
 header .pre-nav div.logo {
-	font-family: "Roboto Slab", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	color: black;
 	font-size: 2em;
 	float: left;
@@ -320,7 +320,8 @@ header nav ul li a {
 	margin-right: 20px;
 	display: inline-block;
 	box-sizing: border-box;
-	padding: 5px 10px;
+	padding: 5px 20px;
+
 }
 
 .badges {
@@ -383,8 +384,7 @@ header nav ul li a {
 }
 
 #proizvodjaci h2 span {
-	border-left: 5px solid #116568;
-	margin-right: 20px;
+	border-bottom: 5px solid #116568;
 	display: inline-block;
 	box-sizing: border-box;
 	padding: 5px 10px;
@@ -496,13 +496,15 @@ header nav ul li a {
 	margin: 20px 0;
 }
 
-.man-info .side a {
+.man-info .side a,
+.man-info .side .certif button {
+	box-sizing: content-box;
 	text-decoration: none;
 	display: inline-block;
 	background: none;
 	border: none;
 	cursor: pointer;
-	font: 700 1rem 'Roboto Slab', sans-serif;
+	font: 700 1rem 'Montserrat', sans-serif;
 	padding: 0.5em 1em;
 	letter-spacing: 0.03rem;
 	border: 3px solid #682D06;
@@ -513,7 +515,8 @@ header nav ul li a {
 	width: 176px;
 }
 
-.man-info .side a:hover {
+.man-info .side a:hover,
+.man-info .side .certif button:hover {
 	background-color: #fff;
 	color: #682D06;
 }
@@ -600,7 +603,7 @@ img.certificate {
 	color: white;
 	display: inline-block;
 	border: 5px solid white;
-	font: 700 1.4rem 'Roboto Slab', sans-serif;
+	font: 700 1.4rem 'Montserrat', sans-serif;
 	padding: 1em 2em;
 	margin: 100px 0 20px 0;
 	transition: .3s;
@@ -635,9 +638,25 @@ img.certificate {
 	background-position: center;
 }
 
-#kontakt-info {
+#kontakt {
+	margin-top: 70px;
+}
 
-	height: 400px;
+#kontakt-info {
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+#kontakt-info ul {
+	line-height: ;
+}
+
+#kontakt-info h2 span {
+	font-family: "Montserrat", sans-serif;
+	font-size: 2em;
+	font-weight: 700;
+	border-bottom: 5px solid #116568;
+	display: inline-block;
 }
 
 #kontakt-forma {
@@ -647,27 +666,45 @@ img.certificate {
 }
 
 #kontakt-forma h2 {
-	font-family: "Roboto Slab", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 2em;
-	/*font-weight: 700;*/
-	border-left: 5px solid #B5632F;
-	padding-left: 10px;
+	font-weight: 700;
+	border-bottom: 5px solid #116568;
+	display: inline-block;
 }
 
-form {
-
+/*form {
+	font-size: 0;
 }
+
+form * {
+	font-size: 16px;
+}*/
 
 form input, form textarea {
 	width: 100%;
 	margin: 10px 0;
 	resize: none;
 	box-sizing: border-box;
-	padding: 5px;
-	font-family: "Lato";
+	padding: 14px;
+	font-family: "Titillium Web", sans-serif;
+	/*font-weight: 400;*/
 	border: none;
 	box-shadow: none;
 	color: #888;
+	box-sizing: border-box;
+	transition: .6s;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+	transition: .5s;
+}
+
+form input:focus::placeholder,
+form textarea:focus::placeholder {
+	padding-left: 10%;
+	opacity: .5;
 }
 
 form p {
@@ -676,7 +713,38 @@ form p {
 
 form input[type="submit"],
 form input[type="reset"] {
-	width: 10em;
+	padding: .5em;
+	font-family: "Montserrat", sans-serif;
+	color: white;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+form input[type="reset"] {
+	color: #5CF9FF;
+	background-color: transparent;
+	text-decoration: underline;
+	font-size: 1em;
+	width: 8em;
+	padding: 1em;
+	border: .5em solid transparent;
+	text-transform: lowercase;
+}
+
+form input[type="reset"]:hover {
+	color: #116568;
+}
+
+form input[type="submit"] {
+	width: 15em;
+	font-size: 1em;
+	background-color: #682D06;
+	border: .5em solid #682D06;
+}
+
+form input[type="submit"]:hover {
+	background-color: rgba(255, 255, 255, .8);
+	color: #682D06;
 }
 
 footer {
@@ -687,3 +755,17 @@ footer {
 	box-sizing: border-box;
 	font-style: italic;
 }
+
+footer span {
+	vertical-align: middle;
+}
+
+
+/*COLORS*/
+/*
+#116568
+#5CF9FF
+#2FB0B5
+#682D06
+#B5632F
+*/
