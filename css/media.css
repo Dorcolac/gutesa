@@ -41,6 +41,68 @@
 		border-top: none;
 	}
 
+	main section#o-nama {
+		min-height: 100vh;
+		position: relative;
+	}
+
+	main section#o-nama .overlay {
+		/*display: flex;*/
+		/*justify-content: content: '';ter;*/
+		/*align-items: center;*/
+	}
+
+	.badges {
+		max-width: 1200px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.badge {
+		max-width: 270px;
+		margin-bottom: 1em;
+		margin: 0 10px;
+	}
+
+	.badge h3 {
+		text-align: center;
+		font-size: 2em;
+		margin-bottom: 10px;
+		color: #116568;
+		text-shadow: 0 0 50px #fff;
+	}
+
+	.badge p {
+		background-color: #116568;
+		box-sizing: border-box;
+		padding: 10px;
+		height: 100px;
+		line-height: 1.3em;
+		text-align: center;
+	}
+
+	.badge .icon {
+		padding: 1.5em;
+		box-shadow: 0px 0px 10px #fff;
+		background-color: rgba(255, 255, 255, 1);
+		box-sizing: border-box;
+		color: #2FB0B5;
+		text-align: center;
+	}
+
+	.badge .icon i {
+		font-size: 3.5em;
+		text-shadow: 0 0 100px #fff;
+	}
+
+	.badge .icon img {
+		max-width: 3.5em;
+		max-height: 3.5em;
+	}
+
 	.man-info {
 		font-size: 0;
 	}
