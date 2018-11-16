@@ -607,9 +607,6 @@ img.certificate {
 #lokacija #map {
 	width: 100%;
 	height: 80vh;
-	background-image: url('https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg');
-	background-size: cover;
-	background-position: center;
 }
 
 #kontakt {
