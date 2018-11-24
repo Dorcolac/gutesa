@@ -328,6 +328,61 @@ header nav ul li a {
 
 }
 
+
+
+	.badges {
+		max-width: 1200px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.badge {
+		max-width: 270px;
+		margin-bottom: 1em;
+		margin: 0 10px;
+	}
+
+	.badge h3 {
+		text-align: center;
+		font-size: 2em;
+		margin-bottom: 10px;
+		color: #116568;
+		text-shadow: 0 0 50px #fff;
+	}
+
+	.badge p {
+		background-color: #116568;
+		box-sizing: border-box;
+		padding: 10px;
+		height: 100px;
+		line-height: 1.3em;
+		text-align: center;
+	}
+
+	.badge .icon {
+		padding: 1.5em;
+		box-shadow: 0px 0px 10px #fff;
+		background-color: rgba(255, 255, 255, 1);
+		box-sizing: border-box;
+		color: #2FB0B5;
+		text-align: center;
+	}
+
+	.badge .icon i {
+		font-size: 3.5em;
+		text-shadow: 0 0 100px #fff;
+	}
+
+	.badge .icon img {
+		max-width: 3.5em;
+		max-height: 3.5em;
+	}
+
+
+
 /*MANUFACTURERS SLIDER*/
 #proizvodjaci {
 	background-color: #fff;
@@ -521,7 +576,7 @@ header nav ul li a {
 }
 
 div.certificate {
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	background-color: rgba(0, 0, 0, 0.8);
@@ -529,8 +584,12 @@ div.certificate {
 	height: 100vh;
 	width: 100vw;
 	z-index: 2000;
-	display: none;
 	text-align: center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
 }
 
 div.certificate button {
@@ -548,7 +607,7 @@ div.certificate button {
 img.certificate {
 	max-width: 100%;
 	max-height: 100vh;
-	padding: 20px;
+	padding: 1em;
 	background-color: transparent;
 	box-sizing: border-box;
 }
@@ -595,18 +654,37 @@ img.certificate {
 	padding-bottom: 100px;
 }
 
+#lokacija {
+	overflow: hidden;
+	height: 80vh;
+	position: relative;
+	background-color: #fff;
+}
+
+#lokacija .container {
+	position: static;
+}
+
+#lokacija .map-info {
+	width: 40%;
+	background-color: red;
+}
+
 #lokacija h2 {
-	position: absolute;
+	/*position: absolute;*/
 	background-color: rgba(50, 50, 50, .6);
 	margin-top: 3em;
 	padding: 2em 0;
-	width: 100%;
+	box-sizing: border-box;
 	text-align: center;
 }
 
 #lokacija #map {
-	width: 100%;
+	position: absolute;
+	width: 56vw;
 	height: 80vh;
+	right: 0;
+	top: 0;
 }
 
 #kontakt {
