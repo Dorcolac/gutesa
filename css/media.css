@@ -2,15 +2,15 @@
 	.navTrigger {
 		display: none;
 	}
-
+	
 	header .container {
 		overflow: hidden;
 	}
-
+	
 	header .pre-nav {
 		float: left;
 	}
-
+	
 	header nav {
 		transition: .5s;
 		transition-delay: 0;
@@ -19,73 +19,80 @@
 		float: right;
 		display: block !important;
 	}
-
+	
 	header.shrink nav {
 		margin-top: 0;
 	}
-
+	
 	header .pre-nav div.logo {
 		font-size: 2.5em;
 	}
-
+	
 	header.shrink .pre-nav .logo {
 		font-size: 2em;
 	}
-
+	
 	header nav ul li {
 		display: inline-block;
 		color: white;
 	}
-
+	
 	header nav ul li:first-of-type {
 		border-top: none;
 	}
-
+	
 	main section#o-nama {
 		min-height: 100vh;
 		position: relative;
+		background: url('../img/repair.jpg');
+		background-position: center 20%;
+		background-size: cover;
 	}
-
+	
 	main section#o-nama .overlay {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 
+	.badge {
+		max-width: 270px;
+	}
+	
 	img.certificate {
 		padding: 2em;
 	}
-
+	
 	.man-info {
 		font-size: 0;
 	}
-
+	
 	.man-info .main,
 	.man-info .side
 	{
 		display: inline-block;
 	}
-
+	
 	.man-info .main {
 		width: 70%;
 		font-size: 16px;
 	}
-
+	
 	.man-info .side {
 		width: 30%;
 		font-size: 16px;
 	}
-
+	
 	#web-shop .overlay  {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-
+	
 	#lokacija {
 		min-height: 100%;
 	}
-
+	
 	#lokacija #map {
 		position: absolute;
 		right: 0;
@@ -93,37 +100,31 @@
 		width: 60vw;
 		max-height: 100%;
 	}
-
+	
 	#kontakt {
 		overflow: hidden;
 	}
-
+	
 	#kontakt-info {
 		width: 50%;
 	}
-
+	
 	#kontakt-info table {
 		width: 80%;
 	}
-
+	
 	#kontakt-forma {
 		width: 50%;
 	}
-
+	
 	#kontakt-info, #kontakt-forma {
 		float: left;
 	}
-
+	
 }
 
 @media screen and (max-width: 1137px) {
 	.badges {
 		justify-content: space-around;
 	}
-}
-
-@media screen and (min-width: 1200px) {
-
-	
-	
 }

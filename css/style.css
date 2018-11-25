@@ -301,9 +301,7 @@ header nav ul li a {
 
 #o-nama {
 	box-sizing: border-box;
-	background: url('../img/repair.jpg');
-	background-position: center 20%;
-	background-size: cover;
+	text-shadow: 0 0 3px #000;
 }
 
 #o-nama .overlay {
@@ -312,25 +310,20 @@ header nav ul li a {
 }
 
 #o-nama h2 {
-	padding-top: 2em;
+	padding-top: 3.2em;
+	margin-bottom: 1em;
 	font-size: 2em;
-	padding-left: 10px;
-	margin-bottom: 50px;
-	text-align: center;
-}
-
-#o-nama h2 span {
-	border-left: 5px solid #B5632F;
-	margin-right: 20px;
-	display: inline-block;
 	box-sizing: border-box;
-	padding: 5px 20px;
+	margin-left: 20px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	border-bottom: 5px solid #B56221;
+	display: inline-block;
 }
 
 #o-nama .overlay .container > p {
 	box-sizing: border-box;
 	padding: 10px 20px;
-	/* margin: 20px 0; */
 }
 
 .badges {
@@ -338,13 +331,12 @@ header nav ul li a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	/* position: absolute; */
-	bottom: 0;
+	margin-top: 2em;
 }
 
 .badge {
-	max-width: 270px;
-	margin-bottom: 1em;
+	max-width: 100%;
+	padding-bottom: 1em;
 	margin: 0 10px;
 }
 
@@ -842,8 +834,7 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
 	background-color: transparent;
-	color: #fff;
-	border-color: #fff;
+	border-color: #B56221;
 }
 
 footer {
