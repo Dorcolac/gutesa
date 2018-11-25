@@ -121,7 +121,6 @@ header nav ul li a {
 	text-transform: uppercase;
 	display: block;
 	line-height: 50px;
-	vertical-align: middle;
 	font-size: 16px;
 	box-sizing: border-box;
 	padding: 0 20px;
@@ -477,9 +476,6 @@ header nav ul li a {
 	display: none;
 }
 
-.man-info * {
-}
-
 .man-info .main {
 	vertical-align: top;
 	box-sizing: border-box;
@@ -541,7 +537,6 @@ header nav ul li a {
 	border: none;
 	font-size: 16px;
 	line-height: 20px;
-	vertical-align: middle;
 	text-align: center;
 	background-color: #fff;
 	color: #2FB0B5;
@@ -667,13 +662,11 @@ img.certificate {
 
 #lokacija .map-info {
 	width: 40%;
-	background-color: red;
 }
 
 #lokacija h2 {
-	/*position: absolute;*/
-	background-color: rgba(50, 50, 50, .6);
-	margin-top: 3em;
+	/* position: absolute; */
+	/* margin-top: 3em; */
 	padding: 2em 0;
 	box-sizing: border-box;
 	text-align: center;
@@ -694,10 +687,6 @@ img.certificate {
 #kontakt-info {
 	box-sizing: border-box;
 	padding: 20px;
-}
-
-#kontakt-info ul {
-	line-height: ;
 }
 
 #kontakt-info h2 span {
