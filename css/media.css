@@ -82,8 +82,16 @@
 		align-items: center;
 	}
 
-	#web-shop, #web-shop .overlay {
-		/*min-height: 30em;*/
+	#lokacija {
+		min-height: 100%;
+	}
+
+	#lokacija #map {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 60vw;
+		max-height: 100vh;
 	}
 
 	#kontakt {
@@ -92,6 +100,10 @@
 
 	#kontakt-info {
 		width: 50%;
+	}
+
+	#kontakt-info table {
+		width: 80%;
 	}
 
 	#kontakt-forma {
