@@ -48,13 +48,15 @@ header {
 }
 
 header .pre-nav div.logo {
-	font-family: "Montserrat", sans-serif;
-	color: black;
 	font-size: 2em;
 	float: left;
 	margin: 13px 0 8px 10px;
-	color: #fff;
 	transition: .3s;
+}
+
+header .pre-nav div.logo a {
+	font-family: "Montserrat", sans-serif;
+	color: #fff;
 }
 
 header .pre-nav .burger {
@@ -68,7 +70,7 @@ header .pre-nav .burger {
 header .pre-nav .burger div {
 	height: 5px;
 	width: 100%;
-	background-color: black;
+	background-color: #000;
 	margin: 7px 0;
 	border-radius: 3px;
 }
@@ -123,7 +125,7 @@ header nav ul li a {
 	font-size: 16px;
 	box-sizing: border-box;
 	padding: 0 20px;
-
+	
 }
 
 /*BURGER MENU*/
@@ -306,11 +308,11 @@ header nav ul li a {
 
 #o-nama .overlay {
 	background-color: rgba(0, 0, 0, .6);
-	height: 100vh;
+	min-height: 100vh;
 }
 
 #o-nama h2 {
-	padding-top: 5em;
+	padding-top: 2em;
 	font-size: 2em;
 	padding-left: 10px;
 	margin-bottom: 50px;
@@ -323,61 +325,64 @@ header nav ul li a {
 	display: inline-block;
 	box-sizing: border-box;
 	padding: 5px 20px;
-
 }
 
+#o-nama .overlay .container > p {
+	box-sizing: border-box;
+	padding: 10px 20px;
+	/* margin: 20px 0; */
+}
 
+.badges {
+	max-width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/* position: absolute; */
+	bottom: 0;
+}
 
-	.badges {
-		max-width: 1200px;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		position: absolute;
-		bottom: 0;
-	}
+.badge {
+	max-width: 270px;
+	margin-bottom: 1em;
+	margin: 0 10px;
+}
 
-	.badge {
-		max-width: 270px;
-		margin-bottom: 1em;
-		margin: 0 10px;
-	}
+.badge h3 {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 10px;
+	color: #116568;
+	text-shadow: 0 0 50px #fff;
+}
 
-	.badge h3 {
-		text-align: center;
-		font-size: 2em;
-		margin-bottom: 10px;
-		color: #116568;
-		text-shadow: 0 0 50px #fff;
-	}
+.badge p {
+	background-color: #116568;
+	box-sizing: border-box;
+	padding: 10px;
+	height: 100px;
+	line-height: 1.3em;
+	text-align: center;
+}
 
-	.badge p {
-		background-color: #116568;
-		box-sizing: border-box;
-		padding: 10px;
-		height: 100px;
-		line-height: 1.3em;
-		text-align: center;
-	}
+.badge .icon {
+	padding: 1.5em;
+	box-shadow: 0px 0px 10px #fff;
+	background-color: rgba(255, 255, 255, 1);
+	box-sizing: border-box;
+	color: #2FB0B5;
+	text-align: center;
+}
 
-	.badge .icon {
-		padding: 1.5em;
-		box-shadow: 0px 0px 10px #fff;
-		background-color: rgba(255, 255, 255, 1);
-		box-sizing: border-box;
-		color: #2FB0B5;
-		text-align: center;
-	}
+.badge .icon i {
+	font-size: 3.5em;
+	text-shadow: 0 0 100px #fff;
+}
 
-	.badge .icon i {
-		font-size: 3.5em;
-		text-shadow: 0 0 100px #fff;
-	}
-
-	.badge .icon img {
-		max-width: 3.5em;
-		max-height: 3.5em;
-	}
+.badge .icon img {
+	max-width: 3.5em;
+	max-height: 3.5em;
+}
 
 
 
@@ -715,7 +720,7 @@ img.certificate {
 
 #lokacija h2 {
 	display: inline-block;
-	padding: 3em 0 1em 0;
+	padding: 2em 0 1em 0;
 	font-size: 32px;
 	margin: 0;
 }
@@ -792,14 +797,6 @@ img.certificate {
 	display: inline-block;
 }
 
-/*form {
-	font-size: 0;
-}
-
-form * {
-	font-size: 16px;
-}*/
-
 form input, form textarea {
 	width: 100%;
 	margin: 10px 0;
@@ -830,40 +827,23 @@ form p {
 	font-style: italic;
 }
 
-form input[type="submit"],
-form input[type="reset"] {
+form input[type="submit"] {
 	padding: .5em;
 	font-family: "Montserrat", sans-serif;
 	color: white;
 	cursor: pointer;
 	box-sizing: border-box;
-}
-
-form input[type="reset"] {
-	color: #5CF9FF;
-	background-color: transparent;
-	text-decoration: underline;
-	font-size: 1em;
-	width: 8em;
-	padding: 1em;
-	border: .5em solid transparent;
-	text-transform: lowercase;
-}
-
-form input[type="reset"]:hover {
-	color: #116568;
-}
-
-form input[type="submit"] {
-	width: 15em;
-	font-size: 1em;
-	background-color: #682D06;
-	border: .5em solid #682D06;
+	width: 100%;
+	font-size: 1.2em;
+	font-weight: 700;
+	background-color: #116568;
+	border: 5px solid #116568;
 }
 
 form input[type="submit"]:hover {
-	background-color: rgba(255, 255, 255, .8);
-	color: #682D06;
+	background-color: transparent;
+	color: #fff;
+	border-color: #fff;
 }
 
 footer {
