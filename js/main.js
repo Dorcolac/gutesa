@@ -12,20 +12,20 @@ $('.manufacturers').slick({
 	centerPadding: "0",
 	infinite: true,
 	responsive: [
-	{
-		breakpoint: 450,
-		settings: {
-			slidesToShow: 3,
-			arrows: true
+		{
+			breakpoint: 450,
+			settings: {
+				slidesToShow: 3,
+				arrows: true
+			}
+		},
+		{
+			breakpoint: 900,
+			settings: {
+				slidesToShow: 5,
+				arrows: true
+			}
 		}
-	},
-	{
-		breakpoint: 900,
-		settings: {
-			slidesToShow: 5,
-			arrows: true
-		}
-	}
 	]
 });
 
@@ -49,13 +49,26 @@ $('.manufacturers').on('click', '.slick-slide', function (e) {
 	$('.man-info .side img').attr('src', src);
 	if (cert) {
 		$('.man-info .side .certif').css('display', 'block');
-		$('.man-info .side .certif a').attr('href', cert);
+		$('.man-info .side .certif button').attr('data-cert', cert);
 	} else {
 		$('.man-info .side .certif').css('display', 'none');
 	}
 	$('.man-info').slideDown();
 	$('.manufacturers').slick('slickPause');
 });
+
+$('.certif button').on('click', function() {
+	var certificate = document.querySelector('img.certificate');
+	var certSrc = $(this).attr('data-cert');
+	certificate.classList.add('certificate');
+	certificate.src = certSrc;
+	document.querySelector('div.certificate .overlay').appendChild(certificate);
+	$('div.certificate').addClass('active');
+})
+
+$('.certificate .overlay').on('click', function() {
+	document.querySelector('div.certificate').classList.remove('active');
+})
 
 $('.close-info').on('click', function() {
 	$('.man-info').slideUp();

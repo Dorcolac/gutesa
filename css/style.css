@@ -310,8 +310,6 @@ header nav ul li a {
 }
 
 #o-nama h2 {
-	padding-top: 3.2em;
-	margin-bottom: 1em;
 	font-size: 2em;
 	box-sizing: border-box;
 	margin-left: 20px;
@@ -319,11 +317,54 @@ header nav ul li a {
 	font-weight: 700;
 	border-bottom: 5px solid #B56221;
 	display: inline-block;
+	margin-bottom: 1em;
 }
 
-#o-nama .overlay .container > p {
+#o-nama h2:first-of-type {
+	padding-top: 3.2em;
+}
+
+#o-nama .overlay .container .about-text p {
 	box-sizing: border-box;
 	padding: 10px 20px;
+}
+
+#o-nama p {
+	max-width: 1040px;
+}
+
+#o-nama .about-text {
+	display: inline-block;
+}
+
+#o-nama .about-shell {
+	text-align: center;
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#o-nama .call-to-action {
+	text-align: center;
+}
+
+#o-nama .call-to-action a {
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	border: 5px solid white;
+	font: 700 1.4rem 'Montserrat', sans-serif;
+	padding: 0.6em 1.2em;
+	margin: 50px 0;
+	transition: .3s;
+	position: relative;
+	text-shadow: none;
+}
+
+#o-nama .call-to-action a:hover {
+	border-color: #B5632F;
+	color: #B5632F;
+	background-color: rgba(255, 255, 255, .7);
 }
 
 .badges {
@@ -566,10 +607,14 @@ header nav ul li a {
 	vertical-align: top;
 }
 
-div.certificate {
+.certificate {
 	display: none;
-	justify-content: center;
-	align-items: center;
+	transition: .6s;
+	visibility: hidden;
+}
+
+div.certificate.active {
+	visibility: visible;
 	background-color: rgba(0, 0, 0, 0.8);
 	position: fixed;
 	height: 100vh;
@@ -581,6 +626,7 @@ div.certificate {
 	left: 0;
 	right: 0;
 	overflow: hidden;
+	display: block;
 }
 
 div.certificate button {
@@ -593,14 +639,32 @@ div.certificate button {
 	background-color: transparent;
 	border: none;
 	color: #fff;
+	transition: .3s;
 }
 
-img.certificate {
+div.certificate button:hover {
+	transform: rotate(180deg);
+	color: #f00;
+	font-weight: 700;
+}
+
+div.certificate.active img {
+	visibility: visible;
+	display: inline;
 	max-width: 100%;
 	max-height: 100vh;
 	padding: 1em;
 	background-color: transparent;
 	box-sizing: border-box;
+}
+
+div.certificate .overlay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
 }
 
 #web-shop {
