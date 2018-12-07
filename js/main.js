@@ -1,3 +1,9 @@
+// LOAD ALERT
+function closeAlert() {
+	// document.querySelector('.alert').css.display = "none";
+	alert('asdas');
+}
+
 /* MANUFACTURERS CAROUSEL */
 $('.manufacturers').slick({
 	accessibility: true,
@@ -76,8 +82,8 @@ $('.close-info').on('click', function() {
 })
 
 $('.navTrigger').click(function(){
-	$('nav').slideToggle();
 	$(this).toggleClass('active');
+	$('nav').slideToggle();
 });
 
 // SMOOTH SCROLL
@@ -90,6 +96,11 @@ $('a[href^="#"]').on('click', function(event) {
 		}, 800);
 	}
 });
+
+$('nav a[href^="#"]').on('click', function(event) {
+	$('.navTrigger').toggleClass('active');
+	$('nav').slideToggle();
+})
 
 // SHRINK NAV
 document.addEventListener("scroll", myFunction);
