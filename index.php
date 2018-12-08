@@ -4,18 +4,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Guteša d.o.o. je firma sa već preko 10 godina iskustva u oblasti veleprodaje autodelova za automobile i kamione.">
-	<meta name="author" content="Nikola Starčević">
-	<meta name="email" content="nikola.starcevic.95@gmail.com">
+	<title>Guteša d.o.o.</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" media="screen and (min-width: 840px)" href="css/media.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:700&amp;subset=latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&amp;subset=latin-ext" rel="stylesheet">
-	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-	<title>Guteša d.o.o.</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
@@ -32,6 +30,8 @@
 	<meta name="msapplication-TileColor" content="#004E98">
 	<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#004E98">
+	<meta name="author" content="Nikola Starčević">
+	<meta name="email" content="nikola.starcevic.95@gmail.com">
 </head>
 <body>
 	<header>
@@ -73,13 +73,13 @@
 							
 							<p>Guteša d.o.o. je firma sa već preko 10 godina iskustva u oblasti veleprodaje autodelova za automobile i kamione. U našem asortimanu imamo veoma veliki broj artikala od više eminentih proizvođača autodelova, a naš rad karakterišu preciznost i izuzetno brza isporuka. Rastemo i razvijamo se poštujući pre svega zahteve tržišta i želje kupca.</p>
 							
-							<p>Vaše je samo da nam javite šta vam je potrebno, a mi ćemo učiniti sve da  to pronađemo u što kraćem roku, i isporučimo  vam. Na našem sajtu možete pogledati s kojim proizvođačima autodelova sarađujemo. U našem lageru se nalazi veliki broj autodelova i komponenti, a da lakše pronađete ono što je potrebno, tu su katalozi proizvoda.</p>
+							<p>Vaše je samo da nam javite šta vam je potrebno, a mi ćemo učiniti sve da to pronađemo u što kraćem roku, i isporučimo  vam. Na našem sajtu možete pogledati s kojim proizvođačima autodelova sarađujemo. U našem lageru se nalazi veliki broj autodelova i komponenti, a da lakše pronađete ono što je potrebno, tu su katalozi proizvoda.</p>
 							
 							<p>Sa ponosom ističemo da smo ovlašćeni prodavci za Shell motorna ulja.</p>
 						</div>
 						
 						<div class="about-shell">
-							<img src="img/man/shell_logo.png" alt="Shell logo" title="Shell logo">
+							<img src="img/shell_logo.png" alt="Shell logo" title="Shell logo">
 						</div>
 					</div>
 					
@@ -344,7 +344,7 @@
 			</section>
 		</main>
 		<footer>
-			<div class="container"><span>&copy</span> gutesa.rs 2018</div>
+			<div class="container"><span>&copy;</span> gutesa.rs 2018</div>
 		</footer>
 		
 		<script

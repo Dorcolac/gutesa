@@ -150,8 +150,12 @@
 	
 }
 
-@media screen and (max-width: 1137px) {
-	.badges {
-		justify-content: space-around;
+@media screen and (min-width: 1921px) {
+	main section#o-nama {
+		background: url('../img/repair-lg.jpg');
+	}
+
+	#web-shop {
+		background: url('../img/antique-lg.jpg');
 	}
 }
